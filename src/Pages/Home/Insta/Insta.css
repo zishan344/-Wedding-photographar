@@ -1,0 +1,15 @@
+.insta-bg {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-image: url(https://max-webs.site/marketing/photographer/img/instagram.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+.instagram-title {
+  position: relative;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
