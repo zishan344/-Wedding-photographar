@@ -1,0 +1,9 @@
+.service-info {
+  border-bottom: 1px solid #efefef;
+  padding: 10px;
+}
+.service-box {
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

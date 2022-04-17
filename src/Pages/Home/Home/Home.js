@@ -1,11 +1,12 @@
 import React from "react";
 import Bannar from "../Bannar/Bannar";
+import Portfolio from "../Portfolio/Portfolio";
 import Services from "../Services/services";
 const Home = () => {
   return (
     <div>
-      <h2>This is home</h2>
       <Bannar></Bannar>
+      <Portfolio></Portfolio>
       <Services></Services>
     </div>
   );
