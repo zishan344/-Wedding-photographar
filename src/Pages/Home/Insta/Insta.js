@@ -4,7 +4,7 @@ import "./Insta.css";
 const Insta = () => {
   return (
     <div className="container-fluid insta-bg my-5">
-      <div class="container">
+      <div className="container">
         <div className="instagram-title">
           <p>
             <BsInstagram /> INSTAGRAM
@@ -17,14 +17,14 @@ const Insta = () => {
           </p>
         </div>
         <a
-          class="btn btn-outline-light fw-bold"
+          className="btn btn-outline-light fw-bold"
           href="https://www.instagram.com/"
           target="_blank"
           rel="noreferrer"
         >
           Subscribe in Instargram
         </a>
-        <div class="clear"></div>
+        <div className="clear"></div>
       </div>
     </div>
   );

@@ -5,16 +5,16 @@ const Footer = () => {
   const today = new Date();
   return (
     <div>
-      <div class="container">
+      <div className="container">
         <div className="row align-items-center pb-4">
-          <div class="col-6 ">
-            <div class="copyright">
+          <div className="col-6 ">
+            <div className="copyright">
               &copy; {today.getFullYear()} . All rights reserved.
             </div>
           </div>
           <div
             style={{ gap: "12px" }}
-            class="col-6 text-end d-flex align-items-center justify-content-end"
+            className="col-6 text-end d-flex align-items-center justify-content-end"
           >
             <a
               href="#"

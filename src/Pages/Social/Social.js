@@ -1,6 +1,14 @@
 import React from "react";
+import { useSignInWithGoogle } from "react-firebase-hooks/auth";
 import { FcGoogle } from "react-icons/fc";
+import { useNavigate } from "react-router-dom";
+import auth from "../../firebase.init";
 const Social = () => {
+  const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
+  const navigate = useNavigate();
+  if (user) {
+    navigate("/");
+  }
   return (
     <div>
       <div className="d-flex align-items-center">
@@ -15,9 +23,12 @@ const Social = () => {
         ></div>
       </div>
       <div className="d-flex justify-content-center">
-        <button className="btn btn-outline-primary flex align-items-center align-items-center ">
+        <button
+          onClick={() => signInWithGoogle()}
+          className="btn btn-outline-primary flex align-items-center align-items-center "
+        >
           <FcGoogle className="fs-2" />
-          <span className="px-2 fw-bold">Continue With Google</span>
+          <span className="px-2 fw-bold">Sign in With Google</span>
         </button>
       </div>
     </div>
