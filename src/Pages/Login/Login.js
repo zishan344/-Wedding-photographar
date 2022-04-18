@@ -43,7 +43,7 @@ const Login = () => {
     <div className="container my-5 py-5">
       <div className="row">
         <h2 className="text-center fw-bold ">Please Login</h2>
-        <div className="col-6 mx-auto">
+        <div className="col-sm-12 col-lg-6 mx-auto">
           <Form onSubmit={loginWitEmail}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Email address</Form.Label>
