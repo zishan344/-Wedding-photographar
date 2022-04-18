@@ -4,7 +4,7 @@ import {
   useSendPasswordResetEmail,
   useSignInWithEmailAndPassword,
 } from "react-firebase-hooks/auth";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import auth from "../../firebase.init";
@@ -16,8 +16,11 @@ const Login = () => {
     useSendPasswordResetEmail(auth);
   const [email, setEmail] = useState("");
   const navigate = useNavigate();
+  let location = useLocation();
+
+  let from = location.state?.from?.pathname || "/";
   if (user) {
-    navigate("/home");
+    navigate(from, { replace: true });
   }
   const emailhandle = (e) => {
     setEmail(e.target.value);

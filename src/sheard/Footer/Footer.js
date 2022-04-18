@@ -27,7 +27,7 @@ const Footer = () => {
             <a
               href="#"
               className="icoTwitter text-secondary text-gradient"
-              title="Twitter"
+              title="Twitte"
             >
               <AiOutlineTwitter className=" fs-2" />
             </a>

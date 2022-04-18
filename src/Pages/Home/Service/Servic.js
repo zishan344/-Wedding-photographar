@@ -1,6 +1,11 @@
 import React from "react";
-import "./Services.css";
-const services = () => {
+import { useNavigate } from "react-router-dom";
+import "./Service.css";
+const Service = () => {
+  const navigate = useNavigate();
+  const handelNavigate = () => {
+    navigate("/checkout");
+  };
   return (
     <div className="container">
       <h2 id="service" className="title">
@@ -21,7 +26,12 @@ const services = () => {
             <p className="service-info">100 Internet-format photographs</p>
             <p className="service-info">9 hours of shooting</p>
             <div>
-              <button className=" my-4 btn btn-danger px-3">Order</button>
+              <button
+                onClick={handelNavigate}
+                className=" my-4 btn btn-danger px-3"
+              >
+                Order
+              </button>
             </div>
           </div>
         </div>
@@ -44,7 +54,12 @@ const services = () => {
             <p className="service-info">50 Internet-format photographs</p>
             <p className="service-info">5 hours of shooting</p>
             <div>
-              <button className="my-4 btn btn-danger px-3">Order</button>
+              <button
+                onClick={handelNavigate}
+                className="my-4 btn btn-danger px-3"
+              >
+                Order
+              </button>
             </div>
           </div>
         </div>
@@ -78,7 +93,12 @@ const services = () => {
             <p className="service-info">20 Internet-format photographs</p>
             <p className="service-info">1 hours of shooting</p>
             <div className="my-2">
-              <button className="my-4 btn btn-danger px-3">Order</button>
+              <button
+                onClick={handelNavigate}
+                className="my-4 btn btn-danger px-3"
+              >
+                Order
+              </button>
             </div>
           </div>
         </div>
@@ -87,4 +107,4 @@ const services = () => {
   );
 };
 
-export default services;
+export default Service;
