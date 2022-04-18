@@ -62,7 +62,7 @@ const CheckOut = () => {
                   variant="danger"
                   type="submit"
                 >
-                  Send Message
+                  thank you for the booking.
                 </Button>
               </div>
             </Form>

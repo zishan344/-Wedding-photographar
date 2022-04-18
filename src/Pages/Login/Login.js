@@ -65,6 +65,8 @@ const Login = () => {
                 required
               />
             </Form.Group>
+            {loading && <p>Loading...</p>}
+            <p className="text-danger">{error?.message}</p>
             <p
               onClick={resetPassword}
               className="text-primary btn btn-label-success p-0 text-decoration-underline"
