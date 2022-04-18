@@ -43,6 +43,7 @@ const Register = () => {
                   type="email"
                   name="email"
                   placeholder="Enter email"
+                  required
                 />
               </Form.Group>
 
@@ -52,6 +53,7 @@ const Register = () => {
                   type="password"
                   name="password"
                   placeholder="Password"
+                  required
                 />
               </Form.Group>
 
@@ -61,6 +63,7 @@ const Register = () => {
                   type="password"
                   name="cPassword"
                   placeholder="Confirm Password"
+                  required
                 />
               </Form.Group>
               <p>
