@@ -17,7 +17,7 @@ const Service = () => {
             <h3>Elite</h3>
             <h2 className="fw-bolder fs-1 my-2">$999</h2>
             <p className="service-info">Car transfer with air-con</p>
-            <p className="service-info">Photoshoot in different locations</p>
+            <p className="service-info">Photo shoot in different locations</p>
             <p className="service-info">Creative staged pictures</p>
             <p className="service-info">100 ready-to-print photographs</p>
             <p className="service-info">

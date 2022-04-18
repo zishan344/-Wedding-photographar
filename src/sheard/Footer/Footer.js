@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="row align-items-center pb-4">
           <div className="col-6 ">
             <div className="copyright">
-              &copy; {today.getFullYear()} . All rights reserved.
+              All rights reserved &copy; {today.getFullYear()} .
             </div>
           </div>
           <div

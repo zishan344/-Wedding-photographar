@@ -5,10 +5,10 @@ const Blogs = () => {
     <div>
       <div className="container">
         <div className="row align-items-center my-4">
-          <div className="col-6">
+          <div className="col-lg-6 col-sm-12 my-3">
             <div className="px-2">
               <h3 className="text-primary text-center fw-bolder">
-                Difference between authorization and authentication
+                Difference between authorization and authentication?
               </h3>
               <div>
                 <h2>Authentication :</h2>{" "}
@@ -53,7 +53,7 @@ const Blogs = () => {
               </div>
             </div>
           </div>
-          <div className="col-6">
+          <div className="col-lg-6 col-sm-12 my-3">
             <div className="px2">
               <h4 className="text-primary text-center fw-bold">
                 Why are you using firebase? What other options do you have to
@@ -124,7 +124,7 @@ const Blogs = () => {
           </div>
         </div>
         <div className="row">
-          <div className="col-8">
+          <div className="col-lg-8 col-sm-12">
             <h3 className="fw-bold text-primary">
               What other services does firebase provide other than
               authentication?
