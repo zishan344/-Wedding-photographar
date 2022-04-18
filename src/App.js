@@ -10,6 +10,7 @@ import Register from "./Pages/Register/Register";
 import RequarAuth from "./Pages/RequarAuth/RequarAuth";
 import Footer from "./sheard/Footer/Footer";
 import Header from "./sheard/Header/Header";
+import NotFound from "./sheard/NotFound/NotFound";
 function App() {
   return (
     <>
@@ -29,6 +30,7 @@ function App() {
         <Route path="/about" element={<AboutMe></AboutMe>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
+        <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
     </>
