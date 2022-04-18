@@ -6,7 +6,7 @@ const CheckOut = () => {
   const formSubmit = (e) => {
     e.preventDefault();
 
-    toast("Receive your Information");
+    toast("Thank you for the booking.");
   };
   return (
     <div>
@@ -62,7 +62,7 @@ const CheckOut = () => {
                   variant="danger"
                   type="submit"
                 >
-                  thank you for the booking.
+                  submit
                 </Button>
               </div>
             </Form>

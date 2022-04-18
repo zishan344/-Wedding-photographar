@@ -5,7 +5,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
 import auth from "../../firebase.init";
 const Header = () => {
-  const [user, loading, error] = useAuthState(auth);
+  const [user] = useAuthState(auth);
   return (
     <>
       <Navbar
@@ -16,7 +16,7 @@ const Header = () => {
         variant="dark"
       >
         <Container>
-          <Navbar.Brand as={Link} to="/.">
+          <Navbar.Brand as={Link} to="/">
             <img
               style={{ maxWidth: "270px" }}
               src="https://max-webs.site/marketing/photographer/img/logo-white.png"
@@ -27,7 +27,7 @@ const Header = () => {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto"></Nav>
             <Nav>
-              <Nav.Link href="/home#service">Service</Nav.Link>
+              <Nav.Link href="home#services">Services </Nav.Link>
               <Nav.Link as={Link} to="/blog">
                 Blog
               </Nav.Link>

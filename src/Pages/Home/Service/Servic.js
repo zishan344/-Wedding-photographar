@@ -7,10 +7,8 @@ const Service = () => {
     navigate("/checkout");
   };
   return (
-    <div className="container">
-      <h2 id="service" className="title">
-        Services
-      </h2>
+    <div id="services" className="container">
+      <h2 className="title">Services</h2>
       <div className="row my-5">
         <div className="col-lg-4 col-md-6 col-sm-12 text-center  ">
           <div className="service-box pt-5 px-1">

@@ -10,6 +10,7 @@ const Register = () => {
   const [createUserWithEmailAndPassword, user, loading, error] =
     useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
   const navigate = useNavigate();
+
   if (user) {
     navigate("/");
   }
@@ -23,16 +24,15 @@ const Register = () => {
       toast("password didn't match");
     }
     createUserWithEmailAndPassword(email, password);
-    console.log(email, password);
   };
   return (
     <div>
       <div className="container my-5 py-5">
         <div className="row">
           <h2 className="text-center fw-bold ">Please Register</h2>
-          <div className="col-6 mx-auto">
+          <div className="col-lg-6 col-sm-12 mx-auto">
             <Form onSubmit={formSubmit}>
-              <Form.Group className="mb-3" controlId="formBasicEmail">
+              <Form.Group className="mb-3" controlId="formBasicName">
                 <Form.Label>Your Name</Form.Label>
                 <Form.Control type="text" name="name" placeholder="Your Name" />
               </Form.Group>
@@ -43,7 +43,6 @@ const Register = () => {
                   type="email"
                   name="email"
                   placeholder="Enter email"
-                  required
                 />
               </Form.Group>
 
@@ -53,7 +52,6 @@ const Register = () => {
                   type="password"
                   name="password"
                   placeholder="Password"
-                  required
                 />
               </Form.Group>
 
@@ -63,7 +61,6 @@ const Register = () => {
                   type="password"
                   name="cPassword"
                   placeholder="Confirm Password"
-                  required
                 />
               </Form.Group>
               <p>
