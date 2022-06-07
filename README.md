@@ -15,6 +15,12 @@
 - Blog section
 - About me section
 
+## Features
+
+- This is an Independent-service-provider’s website.
+- Implement Firebase Authentication
+- User can create a new account or sign in with google
+
 # `Technology usages`
 
 - React
